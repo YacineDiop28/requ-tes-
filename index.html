@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Link to the Axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Link to the script file -->
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#description">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Application Météo</h1>
+    </header>
+
+    <section id="description">
+        <img src="/téléchargement (2).jpeg" alt="Weather Image" class="banner-image">
+        <p>Bienvenue dans notre application météo ! Cette application vous permet de récupérer les données météorologiques en temps réel pour n'importe quelle ville dans le monde. Entrez simplement le nom de la ville et cliquez sur "Obtenir la météo".</p>
+    </section>
+
+    <section class="weather-container">
+        <input type="text" id="city-input" placeholder="Entrez le nom de la ville">
+        <button id="fetch-weather">Obtenir la météo</button>
+        
+        <div id="weather-info">
+            <div id="weather-location">Location: </div>
+            <div id="weather-temperature">Temperature: </div>
+            <div id="weather-description">Description: </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Météo App. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
